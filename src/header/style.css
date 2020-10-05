@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background: #4A8F83;
+    position: fixed;
+    width: 100%;
+}
+
+nav.header-nav {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav.header-nav ul li {
+    list-style: none;
+    margin: 0;
+    border-left: 2px solid;
+    display: inline-block;
+    padding: 0 30px;
+    text-align: center;
+    position: relative;
+}
+
+nav.header-nav li a {
+    color: #000000;
+    padding: 0 5px 0 5px;
+    transition: all 0.5s ease;
+}
+
+nav.header-nav li a:hover {
+    color: #FFFFFF;
+}
+
+nav.header-nav li:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #4A8F83;
+}
+
+.footer img{
+    width: 36px;
+    height: 36px;
+    margin: 10px 10px 10px 10px;
+}
+
+#panel-about {
+    height: 200px;
+}
+
+#panel-home {
+    height: 200px;
+}
+
+.panel {
+    /** height: 400px; **/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.social-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signature{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#presentation {
+    font-weight: normal;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+   
+}
+
+p.title {
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p.typping {
+    color: #4A8F83;
+    font-weight: bold;
+    border-right: solid 3px #4A8F83;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/** Animation **/
+p.typping{
+    animation: animated-text 4s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+
+}
+
+/** Text animation **/
+@keyframes animated-text {
+    from{width: 0;}
+    to{width: 380px;}
+}
+
+/** Cursor animation **/
+@keyframes animated-cursor {
+    from{border-right-color: #4A8F83;}
+    to{border-right-color: transparent;}
+}
+
