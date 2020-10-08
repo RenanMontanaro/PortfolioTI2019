@@ -1,5 +1,5 @@
 //Send e-mail
-function send(event) {
+function send(e) {
     e.preventDefault();
     window.location.href="mailto:example@example.com"
     $(".alert").show()
@@ -9,7 +9,7 @@ function send(event) {
 function menuBurger() {
     var burger = document.getElementById("menu");
     if(burger.className === "header-nav") {
-        burger.className += "responsive"
+        burger.className += " responsive"
     } else {
         burger.className = "header-nav"
     }

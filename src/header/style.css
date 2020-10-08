@@ -218,5 +218,6 @@ p.typping{
 }
 
 .alert {
+    display: none;
     border: 2px solid #4A8F83;
 }
