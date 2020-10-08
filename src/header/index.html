@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
     <body>
@@ -12,17 +14,20 @@
         <div class="header">
             <nav role="navigation" class="header-nav">
                 <ul class="menu">
+                    <a href="javascript:void(0);" class="icon" onclick="menuBurger">
+                        <i><img src="../../assets/img/menu-symbol-of-three-parallel-lines.svg"></i>
+                    </a>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#panel-home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Serviços</a>
+                        <a href="#panel-about">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#panel-projects">Projetos</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#panel-contact">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -54,15 +59,51 @@
           Todavia, o desenvolvimento contínuo de distintas formas de atuação assume importantes posições no estabelecimento dos índices pretendidos. No mundo atual, o início da atividade geral de formação de atitudes facilita a criação do remanejamento dos quadros funcionais. Pensando mais a longo prazo, a consolidação das estruturas obstaculiza a apreciação da importância das novas proposições. Acima de tudo, é fundamental ressaltar que o acompanhamento das preferências de consumo oferece uma interessante oportunidade para verificação das direções preferenciais no sentido do progresso.
 
           Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a consulta aos diversos militantes garante a contribuição de um grupo importante na determinação do sistema de formação de quadros que corresponde às necessidades. Neste sentido, o novo modelo estrutural aqui preconizado talvez venha a ressaltar a relatividade dos paradigmas corporativos. O que temos que ter sempre em mente é que a mobilidade dos capitais internacionais acarreta um processo de reformulação e modernização do investimento em reciclagem técnica.
-
-          Por outro lado, o fenômeno da Internet desafia a capacidade de equalização do impacto na agilidade decisória. O incentivo ao avanço tecnológico, assim como o comprometimento entre as equipes possibilita uma melhor visão global do retorno esperado a longo prazo. É importante questionar o quanto a expansão dos mercados mundiais agrega valor ao estabelecimento de todos os recursos funcionais envolvidos.
                             </p>
                         </h1>
                     </div>
                 </div>
             </div>   
         </div>
+        
+        <!-- Projects -->
+        <div class="content" id="panel-projects">
+            <div class="row align-self-center w-100 align-items-center justify-content-center">
+                <div class="mx-auto col-sm-7 col-md-7 col-9">
+                    <h2 id="contentprojects">
+                    Veja alguns dos meus projetos:
+                    </h2>
+                    <img src="../../assets/img/WhatsApp Image 2020-08-30 at 22.39.50.jpeg">
+                    <img src="../../assets/img/WhatsApp Image 2020-08-30 at 22.41.04.jpeg">
+                </div>
+            </div>
+        </div>
 
+        <!-- Contact -->
+        <div class="content" id="panel-contact">
+            <div class="row align-self-center w-100 align-items-center justify-content-center">
+                <div class="mx-auto col-sm-7 col-md-7 col-9">
+                    <h3 id="falecomigo">Fale comigo:</h3>
+                    <form action="mailto:example@example.com" method="POST" enctype="text/plain">
+                    <form onsubmit="send(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome">
+                        <input type="email" placeholder="Seu e-mail">
+                        <input type="text" placeholder="Assunto">
+                            <button>Enviar</button>
+                                <div class="alert alert-sucess alert-dismissible fade show" role="alert">
+                                Obrigado pelo contato!
+                                <a type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times</span>
+                          </a>
+                      </div>
+                  </div>
+                </form>
+                </form>
+                </div>
+            </div>
+        </div>
+    
         <!-- Footer -->
         <div class="footer">
             <div class="social-bar">
@@ -74,8 +115,11 @@
                 <p>Feito por Renan Pires Montanaro</p>
             </div>
         </div>
+
+        <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     </body>
 </html>
